@@ -3,8 +3,8 @@
   <Date>2016-12-20</Date>
   <Beta>False</Beta>
   <Category></Category>
-  <Name>PlexMediaServer</Name>
-  <Project>https://plex.tv/</Project>
+  <Name>PXEServer</Name>
+  <Project></Project>
   <Changes>
 [center][img width='155px' src='https://github.com/twitchmcapple/docker-templates/blob/master/icons/pxe.png?raw=true'][/center]
 
