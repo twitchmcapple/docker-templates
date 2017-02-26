@@ -20,10 +20,10 @@
   </Description>
   <Registry></Registry>
   <GitHub>https://hub.docker.com/r/jumanjiman/tftp-hpa/</GitHub>
-  <Repository>jumanjiman/tftp-hpa:latest</Repository>
+  <Repository>sheeprine/tftpd-hpa:latest</Repository>
   <Support></Support>
   <BindTime>true</BindTime>
-  <Privileged>true</Privileged>
+  <Privileged>false</Privileged>
   <Networking>
     <Mode>host</Mode>
     <Publish/>
@@ -31,9 +31,9 @@
   <Environment/>
   <Data>
     <Volume>
-	    <HostDir>/mnt/user/tftp</HostDir>
-      <ContainerDir>/tftpdata</ContainerDir>
-      <Mode>rw</Mode>
+      <HostDir>/mnt/user/tftp</HostDir>
+      <ContainerDir>/var/lib/tftpboot</ContainerDir>
+      <Mode>ro</Mode>
     </Volume>
     <Volume>
       <HostDir>/mnt/user/appdata/tftphpa</HostDir>
