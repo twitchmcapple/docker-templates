@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Date>2016-12-20</Date>
+  <Beta>False</Beta>
+  <Category></Category>
+  <Name>PlexMediaServer</Name>
+  <Project>https://plex.tv/</Project>
+  <Changes>
+[center][img width='155px' src='https://github.com/twitchmcapple/docker-templates/blob/master/icons/pxe.png?raw=true'][/center]
+
+  </Changes>
+  <Overview>
+    PXE boot server
+  </Overview>
+  <Description>
+    PXE boot server
+    [b][span style='color: #E80000;']Directions:[/span][/b][br]
+    [b]/config[/b] : this is where pxe will store its configuration.[br][br]
+    [b]/tftpdata[/b] where your pxe boot stuff is.
+  </Description>
+  <Registry></Registry>
+  <GitHub>https://hub.docker.com/r/jumanjiman/tftp-hpa/</GitHub>
+  <Repository>jumanjiman/tftp-hpa:latest</Repository>
+  <Support></Support>
+  <BindTime>true</BindTime>
+  <Privileged>true</Privileged>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Environment/>
+  <Data>
+    <Volume>
+	    <HostDir>/mnt/user/tftp</HostDir>
+      <ContainerDir>/tftpdata</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/tftphpa</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:32400]/web/index.html</WebUI>
+  <Banner></Banner>
+  <Icon>https://github.com/twitchmcapple/docker-templates/blob/master/icons/pxe.png?raw=true</Icon>
+</Containers>
