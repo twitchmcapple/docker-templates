@@ -32,18 +32,13 @@
   <Environment/>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/media/hd/Movies</HostDir>
-      <ContainerDir>/Movies</ContainerDir>
+      <HostDir>/mnt/user/media</HostDir>
+      <ContainerDir>/media</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/media/hd/TV</HostDir>
-      <ContainerDir>/TV Shows</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user/Plex Library/Music</HostDir>
-      <ContainerDir>/Music</ContainerDir>
+      <HostDir>/mnt/user/music</HostDir>
+      <ContainerDir>/mnt/music</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
