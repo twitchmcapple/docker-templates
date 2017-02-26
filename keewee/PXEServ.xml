@@ -20,7 +20,7 @@
   </Description>
   <Registry></Registry>
   <GitHub>https://hub.docker.com/r/jumanjiman/tftp-hpa/</GitHub>
-  <Repository>sheeprine/tftpd-hpa:latest</Repository>
+  <Repository>sheeprine/docker-tftpd-hpa:latest</Repository>
   <Support></Support>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
